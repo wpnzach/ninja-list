@@ -1,0 +1,10 @@
+h3.ninja_list_title {
+  margin-bottom: 0px;
+}
+
+.ninja_list_display_content {
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: grey;
+}
