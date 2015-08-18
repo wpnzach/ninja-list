@@ -11,8 +11,15 @@ Author: Zach Skaggs
 Version: 0.0
 Author URI: http://zach.support/
 */
+// Plugin Folder Path
+if ( ! defined( 'NL_PLUGIN_DIR' ) )
+		define( 'NL_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 
-include('/shortcodes.php');
+// Plugin Folder URL
+if ( ! defined( 'NL_PLUGIN_URL' ) )
+		define( 'NL_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+
+include( NL_PLUGIN_DIR . '/shortcodes.php');
 
 // Register Custom Listing
 function ninja_list_register_post_type() {
